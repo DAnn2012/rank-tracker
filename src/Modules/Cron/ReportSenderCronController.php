@@ -192,7 +192,7 @@ class ReportSenderCronController
 
         $dateFromFormat = $this->getReportFromFormat($frequency);
         $this->updateLatestData($dateFromFormat);
-        $keywords = $keywordHelper->getTotalKeywordStasus($dateFromFormat);
+        $keywords = $keywordHelper->getTotalKeywordStatus($dateFromFormat);
 
         if(count($keywords['allKeywords']) === 0){
             return;
