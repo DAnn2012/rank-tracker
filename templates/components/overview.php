@@ -82,7 +82,7 @@ $keywordHelper = wprtContainer('KeywordHelper');
                         <?php esc_html_e('7 Days Average', 'easy-rank-tracker') ?>
                     </div>
                     <?php
-	                    $keywordStatus = $keywordHelper->getTotalKeywordStasus("-7 days");
+	                    $keywordStatus = $keywordHelper->getTotalKeywordStatus("-7 days");
 	                    $className = '';
 	                    $iconName = 'arrow-up.png';
 	                    if (count($keywordStatus['downKeywords']) > count($keywordStatus['upKeywords'])) {
@@ -142,7 +142,7 @@ $keywordHelper = wprtContainer('KeywordHelper');
                         <?php esc_html_e('30 Days Average', 'easy-rank-tracker') ?>
                     </div>
                     <?php
-                    $keywordStatus = $keywordHelper->getTotalKeywordStasus("-30 days");
+                    $keywordStatus = $keywordHelper->getTotalKeywordStatus("-30 days");
                     $className = '';
                     $iconName = 'arrow-up.png';
                     if (count($keywordStatus['downKeywords']) > count($keywordStatus['upKeywords'])) {

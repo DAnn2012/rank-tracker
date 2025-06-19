@@ -40,7 +40,7 @@ class KeywordHelper
         return strtotime($secondDate["last_update_date"]) - strtotime($firstDate["last_update_date"]);
     }
 
-    public function getTotalKeywordStasus($dateFromFormat)
+    public function getTotalKeywordStatus($dateFromFormat)
     {
         $databaseHelper = wprtContainer('DatabaseHelper');
         $rankController = wprtContainer('RankController');
